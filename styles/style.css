@@ -47,6 +47,9 @@ nav a {
     color: white;
     text-decoration: none;
 }
+nav a:hover {
+    opacity: 0.8;
+}
 
 .container_inicio {
     display: flex;
@@ -60,7 +63,6 @@ nav a {
     width: 90%;
     margin: 0 auto;
 }
-
 .imagen_iphone {
     width: 50%;
     display: flex;
@@ -70,7 +72,6 @@ nav a {
 .imagen_iphone img {
     width: 500px;
 }
-
 .texto_derecha {
     display: flex;
     flex-direction: column;
@@ -98,7 +99,6 @@ nav a {
     display: flex;
     align-items: center;
 }
-
 .boton_request {
     background-color: #3a8dde;
     color: white;
@@ -114,7 +114,6 @@ nav a {
     margin: 0 10px;
     font-size: 16px;
 }
-
 .boton_recent_work {
     display: flex; 
     align-items: center;
@@ -123,6 +122,7 @@ nav a {
     font-size: 16px;
     margin-left: 15px;
 }
+
 .boton_recent_work img {
     width: 16px;
     height: 16px;
@@ -130,15 +130,102 @@ nav a {
 }
 
 .containerLogosEmpresa {
+    background-color: #e4e4e4;
     display: flex;
     justify-content: space-between; 
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 70px; 
 }
-
 .containerLogosEmpresa img {
     max-width: 15%; 
 }
 
+.containerInformacionReadMore {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    gap: 30px; 
+}
+.engaging_interfaces, 
+.usableDesign, 
+.SolidDevelopement {
+    flex: 1; 
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.imgEngaging img,
+.imgUsable img,
+.imgSolid img {
+    width: 80px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.textoEngaging h2,
+.textoUsable h2,
+.textoSolid h2 {
+    color: #4c5b66;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.textoEngaging p,
+.textoUsable p,
+.textoSolid p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #3a8dde;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.containerSelectProjects {
+    text-align: center; 
+    width: 90%;
+    padding: 80px 0;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+.tituloSelect {
+    width: 90%;
+    text-align: left; 
+    margin-bottom: 40px;
+}
+
+.tituloSelect h2 {
+    color: #4c5b66;
+    font-size: 32px;
+    margin: 0;
+}
+
+.containerSelectProjectsImg {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.containerSelectProjectsImg img {
+    width: 25%; 
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
